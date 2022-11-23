@@ -1,5 +1,8 @@
+# set target path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
 # install oh-my-zsh if it doesn't exist
-if [ ! -d "~/.oh-my-zsh" ]; then
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
     print -P "%F{33}▓▒░ %F{220}Installing oh-my-zsh…%f"
     # command will bypass functions and aliases; going straight to system PATH
     command sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
