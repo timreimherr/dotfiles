@@ -19,7 +19,7 @@ while true; do
 done
 
 # links
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 
 # zsh 
 if [ "$SHELL" != "/usr/bin/zsh" ]; then
