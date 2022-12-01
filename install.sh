@@ -23,6 +23,7 @@ ln -fs ~/.dotfiles/.zshrc ~/.zshrc
 
 # zsh 
 if [ "$SHELL" != "/usr/bin/zsh" ]; then
+    echo "Install zsh..."
     sudo apt install -y zsh
     zsh
 fi;
