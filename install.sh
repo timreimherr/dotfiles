@@ -29,5 +29,4 @@ ln -sf "$DIR_NAME/zshrc" "$HOME/.zshrc"
 if [ "$SHELL" != "/usr/bin/zsh" ]; then
     echo "Install zsh..."
     sudo apt install -y zsh
-    zsh
 fi;
