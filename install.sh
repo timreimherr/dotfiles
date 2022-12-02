@@ -17,8 +17,8 @@ export ZSH="${HOME}/.oh-my-zsh"
 export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom"
 
 ## Install zsh plugins
-rm -rf "ZSH_CUSTOM/plugins/zsh-autosuggestions" 
-rm -rf "ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
+rm -rf "$ZSH_CUSTOM/plugins/zsh-autosuggestions" 
+rm -rf "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 
