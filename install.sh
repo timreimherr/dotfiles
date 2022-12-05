@@ -24,6 +24,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/
 
 # link zshrc
 ln -sf "$DIR_NAME/zshrc" "$HOME/.zshrc"
+cp "$DIR_NAME/aliases.zsh" "$ZSH_CUSTOM"
 
 # zsh 
 if [ "$SHELL" != "/usr/bin/zsh" ]; then
