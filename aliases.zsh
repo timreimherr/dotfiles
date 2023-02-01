@@ -1,2 +1,2 @@
 # custom aliases go here
-alias gh="cd $HOME/go/src/github.com"
+alias github="cd $HOME/go/src/github.com"
