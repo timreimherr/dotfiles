@@ -27,7 +27,7 @@ ln -sf "$DIR_NAME/zshrc" "$HOME/.zshrc"
 cp "$DIR_NAME/aliases.zsh" "$ZSH_CUSTOM"
 
 # zsh 
-if [ "$SHELL" != "/usr/bin/zsh" ]; then
+if [ "$SHELL" != "/bin/zsh" ]; then
     echo "Install zsh..."
     sudo apt install -y zsh
 fi;
