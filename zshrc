@@ -17,8 +17,9 @@ plugins=(z git history zsh-autosuggestions zsh-syntax-highlighting)
 zstyle ':omz:update' mode auto
 
 # set up PATH
-export PATH=$PATH:$(go env GOPATH)/bin
+if command -v go &>/dev/null; then
+    export PATH=$PATH:$(go env GOPATH)/bin
+fi
 
 # source zsh configuration
 source $ZSH/oh-my-zsh.sh
-
