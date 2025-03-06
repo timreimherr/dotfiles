@@ -8,5 +8,7 @@ noti() {
     fi
 }
 
-# Add the play_sound function to the precmd hook
-precmd_functions+=(noti)
+# Only add the noti function to the precmd hook on macOS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    precmd_functions+=(noti)
+fi
