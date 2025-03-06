@@ -1,8 +1,10 @@
 noti() {
-    if [[ $? = 0 ]]; then
-        say OK
-    else
-        say error
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        if [[ $? = 0 ]]; then
+            say OK
+        else
+            say error
+        fi
     fi
 }
 
