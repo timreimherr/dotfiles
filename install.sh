@@ -27,6 +27,13 @@ ln -sf "$DIR_NAME/zshrc" "$HOME/.zshrc"
 cp "$DIR_NAME/aliases.zsh" "$ZSH_CUSTOM"
 cp "$DIR_NAME/functions.zsh" "$ZSH_CUSTOM"
 
+# Codespace specific setup
+if [ -d "/home/vscode" ]; then
+    ln -sf "$DIR_NAME/zshrc" "/home/vscode/.zshrc"
+    ln -sf "$DIR_NAME/functions.zsh" "/home/vscode/.oh-my-zsh/custom/functions.zsh"
+    ln -sf "$DIR_NAME/aliases.zsh" "/home/vscode/.oh-my-zsh/custom/aliases.zsh"
+fi
+
 # zsh
 if [ "$SHELL" != "/bin/zsh" ]; then
     echo "Install zsh..."
